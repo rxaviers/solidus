@@ -16,4 +16,4 @@ node_modules/
 preview/
 
 .DS_Store
-.sass_cache
+.sass-cache
