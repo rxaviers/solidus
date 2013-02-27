@@ -65,7 +65,7 @@
 
 			width: 160px;
 			height: 28px;
-			background: url('layout/keith-urban-teal.png') no-repeat;
+			background: url('images/layout/keith-urban-teal.png') no-repeat;
 			padding: 0;
 			margin: 5px 0 0 0;
 			margin: .5rem 0 0 0;
@@ -73,7 +73,7 @@
 			text-indent: -5000px;
 
 			&:hover{
-				background-image: url('layout/keith-urban-red-hover.png');
+				background-image: url('images/layout/keith-urban-red-hover.png');
 			}
 
 		}
@@ -197,7 +197,7 @@
 					a {
 
 						display: block;
-						background-image: url('getglue/getglue-black.png');
+						background-image: url('images/getglue/getglue-black.png');
 						background-repeat: no-repeat;
 						background-position: center;
 						margin: 0;

@@ -10,6 +10,12 @@ module.exports = function( grunt ){
                     cwd: 'site/assets/',
                     src: ['images/**/*'],
                     dest: 'preview/'
+                },
+                {
+                    expand: true,
+                    cwd: 'site/assets/',
+                    src: ['webfonts/**/*'],
+                    dest: 'preview/'
                 }]
             }
         },
