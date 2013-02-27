@@ -1,0 +1,1 @@
+var s=document.createElement("script"); s.src="//widgets.getglue.com/checkin.js"; var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(s,n);

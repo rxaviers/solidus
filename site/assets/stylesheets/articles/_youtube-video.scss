@@ -1,0 +1,59 @@
+article.youtube {
+
+	h1 {
+		clear: left;
+		line-height: 1.25;
+	}
+
+	.user + a {
+
+		width: 100%;
+		position: relative;
+		clear: left;
+
+		img {
+			width: 100%;
+			opacity: 0.80;
+		}
+
+		&:hover {
+
+			img {
+				opacity: 1;
+			}
+
+			::before {
+				color: $link-hover-color;
+			}
+
+		}
+
+		&:before {
+
+			width: 100%;
+			margin-top: -30px;
+			margin-top: -3rem;
+			text-align: center;
+			color: white;
+			font-size: 75px;
+			line-height: 1;
+			position: absolute;
+			top: 50%;
+			left: 0;
+			z-index: 2;
+			text-shadow: none;
+
+		}
+
+
+	}
+
+	p a {
+
+		color: $teal-medium;
+
+		&:hover { color: $link-hover-color; }
+
+	}
+
+}

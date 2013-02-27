@@ -1,0 +1,22 @@
+<article class="youtube video stream-article" data-datetime="{{ published }}">
+
+	<div>
+
+		{{# author }}
+		<div class="user">
+			<a class="thumbnail" href="http://youtube.com/user/{{ name }}"><img src="http://i.ytimg.com/i/HYqkMN0UwbyN0krs1pahXQ/1.jpg" alt="{{ name }}" /></a>
+			<a href="http://youtube.com/user/{{ name }}">{{ name }}</a>
+		</div>
+		{{/ author }}
+
+		<a href="{{ link[0].href }}" class="ss-youtube ss-social"><img src="{{ group.thumbnail[0].url }}" alt="{{ title }}" /></a>
+
+		<p><a href="{{ link[0].href }}">{{ title }}</a></p>
+
+		<time>{{ human_published }}</time>
+
+		<span class="ss-youtube ss-social"></span>
+
+	</div>
+
+</article>

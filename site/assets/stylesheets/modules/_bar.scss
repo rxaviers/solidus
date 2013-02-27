@@ -1,0 +1,244 @@
+.bar {
+
+	@include clearfix();
+	width: 100%;
+	background: $teal-dark;
+	padding: 20px 0;
+	padding: 2rem 0;
+	margin: 0 0 30px 0;
+	margin: 0 0 3rem 0;
+
+	div {
+
+		max-width: 890px;
+		padding: 0;
+		margin: 0 auto;
+		box-shadow: none;
+
+		section {
+
+			float: left;
+
+			ul {
+
+				@include reset(list);
+
+				li {
+
+					float: left;
+					margin: 0 32px 0 0;
+					margin: 0 4rem 0 0;
+
+					a, button {
+
+						background: none;
+						padding: 0;
+						font-family: $heading-family;
+						font-size: 18px;
+						line-height: 2;
+						color: $teal-light;
+
+						&:hover {
+							background: none;
+							color: $link-hover-color;
+						}
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+///////////
+// JOIN //
+/////////
+
+.join {
+
+	margin-right: 0;
+
+	.ku a {
+
+			width: 160px;
+			height: 28px;
+			background: url('layout/keith-urban-teal.png') no-repeat;
+			padding: 0;
+			margin: 5px 0 0 0;
+			margin: .5rem 0 0 0;
+			display: block;
+			text-indent: -5000px;
+
+			&:hover{
+				background-image: url('layout/keith-urban-red-hover.png');
+			}
+
+		}
+
+}
+
+
+/////////////
+// LISTEN //
+///////////
+
+.listen {
+
+	position: relative;
+	margin-right: 0;
+
+	button {
+		padding-left: 30px;
+		padding-left: 3rem;
+		padding-right: 30px;
+		padding-right: 3rem;
+	}
+
+	div {
+		@include box-sizing(border-box);
+		display: none;
+		position: absolute;
+		background: #f1f1f1;
+		background: rgba(255,255,255,0.9);
+		width: 100%;
+		top: 28px;
+		padding: 20px;
+		padding: 2rem;
+		z-index: 100;
+		border-bottom-right-radius: 4px;
+		border-bottom-left-radius: 4px;
+	}
+
+	iframe {
+		margin: 0 auto;
+		display: block;
+		cursor: pointer;
+	}
+
+	&:hover div {
+		display: block;
+	}
+
+	&:hover button {
+		color: $link-hover-color;
+		text-shadow: none;
+		background: white;
+		border-bottom: 1px solid #9AB0B6;
+		border-top-right-radius: 4px;
+		border-top-left-radius: 4px;
+	}
+
+}
+
+////////////
+// SPEAK //
+//////////
+
+	.speak {
+
+		h1 {
+
+			margin: 0 10px 0 0;
+			margin: 0 1rem 0 0;
+			color: $emphasis-color;
+			float: left;
+			font-family: $heading-family;
+			font-size: 18px;
+			line-height: 2;
+			text-shadow: none;
+			text-transform: none;
+
+			&:after {
+				content: ' :';
+			}
+
+		}
+
+		ul {
+
+			margin-top: 4px;
+			float: left;
+
+			li {
+
+				margin-right: 10px;
+				margin-right: 1rem;
+
+				a {
+
+					width: 18px;
+					height: 18px;
+					display: block;
+					background-color: $link-color;
+					text-align: center;
+					color: #000;
+					border-radius: 20px;
+					padding: 7px 5px 3px;
+					text-shadow: none;
+					font-size: 20px;
+					font-size: 2rem;
+					line-height: 20px;
+					line-height: 2rem;
+
+					&:hover {
+						color: #000;
+						background-color: $link-hover-color;
+					}
+
+				}
+
+				&.getglue {
+
+					margin-right: 0;
+
+					a {
+
+						display: block;
+						background-image: url('getglue/getglue-black.png');
+						background-repeat: no-repeat;
+						background-position: center;
+						margin: 0;
+						width: 18px;
+						height: 18px;
+						text-indent: -5000px;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
+
+/////////////////
+// STICKY BAR //
+///////////////
+
+body.sticky {
+
+	header {
+		margin-bottom: 60px;
+		margin-bottom: 6rem;
+	}
+
+	.bar {
+
+		@include box-shadow(0 1px 3px rgba(0, 0, 0, 0.5));
+		position: fixed;
+		top: 0;
+		z-index: 100;
+
+		.ku {
+			display: block;
+		}
+
+	}
+
+}

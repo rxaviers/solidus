@@ -1,0 +1,9 @@
+$page-width: 1140px;
+
+.page {
+
+	@include clearfix;
+	max-width: $page-width;
+	margin: 0 auto;
+
+}

@@ -1,0 +1,338 @@
+/* Small Break Point */
+
+@media screen and (max-width: 640px) {
+
+	#header > div {
+
+		padding: 20px;
+		padding: 2rem;
+		background: none;
+
+		h1, h1 a, .description, > div {
+
+			width: 100%;
+			margin: 0;
+			text-align: center;
+
+		}
+
+		h1 a {
+			background-postion: center center;
+
+			html.no-backgroundsize & {
+				width: 355px;
+				margin-left: auto;
+				margin-right: auto;
+				float: none;
+				display: block;
+				background-image: url('layout/keith-urban-gradient-small.png');
+			}
+
+		}
+
+		h2 {
+
+			padding-top: 40px;
+			padding-top: 4rem;
+			border-top: 1px dotted #515455;
+
+		}
+
+		ul > li > a {
+
+			margin: 20px 20px 0 0;
+			margin: 2rem 2rem 0 0;
+			font-size: 44px;
+			font-size: 4.4rem;
+			line-height: 44px;
+			line-height: 4.4rem;
+			vertical-align: middle;
+
+			position: relative;
+			top: 6px;
+
+		}
+
+		ul > .getglue a {
+
+			display: block !important;
+			width: 34px !important;
+			height: 34px !important;
+
+			top: 0;
+
+		}
+
+		h3 a {
+
+			border: none;
+			border-top: 1px dotted #515455;
+			height: auto;
+			width: 100%;
+			margin-top: 40px;
+			margin-top: 4rem;
+			text-align: center;
+			background-position: center 20px;
+			padding: 110px 0 0 0;
+			background-color: transparent;
+			box-shadow: none;
+
+			strong {
+
+				float: none;
+				display: inline-block;
+				margin: 10px auto 0;
+
+				position: static;
+
+			}
+
+		}
+
+	}
+
+	#footer {
+
+		div {
+
+			a#sparkart {
+				margin: 0 auto 1rem auto;
+				position: static;
+			}
+
+			p {
+				padding-left: 20px;
+				padding-left: 2rem;
+				padding-right: 2px;
+				padding-right: 2rem;
+				font-size: 14px;
+				font-size: 1.4rem;
+				line-height: 1.5;
+			}
+
+			ul.social {
+
+				width: 100%;
+
+				li {
+
+					display: inline-block;
+					float: none;
+					margin: 0 10px 10px 0;
+					margin: 0 1rem 1rem 0;
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.bar {
+
+		div section {
+
+			width: 100%;
+			margin: 0 auto;
+			display: table;
+
+			&.jump {
+
+				display: none;
+
+				.ku {
+
+					float: none;
+
+					a {
+						margin: 10px auto;
+						margin: 1rem auto;
+					}
+
+				}
+
+			}
+
+			&.join { display: none; }
+
+			&.join ul li,
+			&.listen ul li {
+
+				width: 50%;
+				margin: 0;
+
+				a, button {
+
+					font-size: 16px;
+					font-size: 1.6rem;
+					width: 100%;
+					text-align: center;
+				}
+
+			}
+
+			&.speak {
+
+				h1 {
+					width: 100%;
+					text-align: center;
+				}
+
+				ul { @include center(); }
+
+				li a {
+
+					width: auto;
+					height: auto;
+					font-size: 28px;
+					font-size: 2.8rem;
+					line-height: 28px;
+					line-height: 2.8rem;
+					padding: 10px 10px 5px 10px;
+					padding: 1rem 1rem 0.5rem 1rem;
+
+				}
+
+				li.getglue a {
+					display: block;
+					text-indent: -5000px;
+					width: 23px;
+					height: 23px;
+				}
+
+			}
+
+		}
+
+	}
+
+	.stream .stream-articles article {
+		width: 100%;
+		padding-right: 0;
+		position: static !important;
+
+		&.spotify { display: none; }
+	}
+
+	.sticky .bar {
+		padding: 10px 0 15px;
+		padding: 1rem 0 1.5rem;
+	}
+
+}
+
+
+/* Medium Break Point */
+
+@media screen and (min-width: 641px) and (max-width: 990px) {
+
+	#header > div {
+
+		padding: 180px 40px;
+		padding: 21rem 4rem;
+		background-size: 85%;
+		background-position: 130% 35%;
+
+		h1 a, > div { width: 100%; }
+
+		h3 a {
+
+			width: 100%;
+			padding-left: 150px;
+			padding-right: 170px;
+			background-color: rgba(255, 255, 255, 0.70);
+
+		}
+
+		> div {
+
+			@include clearfix();
+			@include box-shadow(0 1px 3px rgba(0, 0, 0, 0.15));
+			@include box-sizing(border-box);
+
+			display: block;
+			clear: both;
+			width: 100%;
+			margin: 20px 0 0 0;
+			margin: 2rem 0 0 0;
+			border-radius: 4px;
+			padding: 20px 20px 15px 20px;
+			padding: 2rem 2rem 1.5rem 2rem;
+			background-color: rgba(255, 255, 255, 0.70);
+			border: #ddd 1px solid;
+			border-top-color: #eee;
+			border-bottom-color: #bbb;
+			color: $blue-dark;
+
+		}
+
+	}
+
+	.bar {
+
+		div section {
+
+			width: 100%;
+			margin: 0 auto;
+			display: table;
+
+			&.join {
+
+				ul {
+
+					width: 550px;
+					margin: 0 auto;
+
+					li {
+
+						margin: 0 20px 0 0;
+						margin: 0 2rem 0 0;
+
+						&:last-child { margin-right: 0; }
+
+					}
+
+				}
+
+			}
+
+			&.speak {
+
+				h1 {
+					float: left;
+					width: 48%;
+					margin: 0 2% 0 0;
+					text-align: right;
+				}
+
+				ul {
+
+					float: left;
+					width: 50%;
+
+					li.getglue a {
+
+						display: inline-block;
+
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+	.stream .stream-articles article {
+		width: 50%;
+	}
+
+	#footer div a#sparkart {
+		margin: 0 auto 10px auto;
+		margin: 0 auto 1rem auto;
+		position: static;
+	}
+
+}

@@ -1,0 +1,146 @@
+@mixin center {
+
+	width: 100%;
+	float: none;
+	text-align: center;
+	display: table;
+
+	li {
+
+		float: none;
+		display: inline-block;
+
+		> a {
+			display: block;
+		}
+
+	}
+
+}
+
+@mixin clearfix {
+
+	&:after {
+
+		content: ".";
+		display: block;
+		visibility: hidden;
+		height: 0;
+		clear: both;
+		line-height: 0;
+
+	}
+
+	.clearfix { display: inline-block; }
+
+}
+
+@mixin ellipsis {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	word-wrap: break-word;
+	white-space: nowrap;
+}
+
+@mixin linear-gradient($position: top, $color1: #ffffff, $stop1: 0%, $color2: #ffffff, $stop2: 100%) {
+
+	/* Adaptation from Bourbon for straightforward gradients */
+
+	background:  $color1;
+	background:  -webkit-linear-gradient($position, $color1 $stop1, $color2 $stop2);
+	background:     -moz-linear-gradient($position, $color1 $stop1, $color2 $stop2);
+	background:      -ms-linear-gradient($position, $color1 $stop1, $color2 $stop2);
+	background:       -o-linear-gradient($position, $color1 $stop1, $color2 $stop2);
+
+}
+
+@mixin facebook-control {
+
+	@include box-shadow(none);
+
+    border-radius: 0;
+	padding: 3px 6px 3px 28px;
+	border-top: 1px solid #29447e;
+	border-right: 1px solid #29447e;
+	border-left: 1px solid #29447e;
+	border-bottom: 1px solid #1a356e;
+	background: #5F78AB;
+	color: #fff;
+	font: bold 11px/14px 'Lucida Grande', 'Tahoma', 'Verdana', 'Arial', sans-serif;
+	text-shadow: none;
+
+	&:hover {
+		color: #fff;
+	}
+
+	&:before {
+		display: block;
+		width: 22px;
+		height: 22px;
+		position: absolute;
+		left: -1px;
+		top: -1px;
+		content: '';
+		background: url('layout/facebook-button.png') no-repeat;
+	}
+
+}
+
+@mixin reset($element: base) {
+
+	margin: 0;
+	border: 0;
+	padding: 0;
+
+	@if $element == button {
+
+		outline: none;
+		border: 0;
+
+		&::-moz-focus-inner {
+			border: 0;
+		}
+
+		-webkit-appearance: none;
+
+	} @else if $element == link {
+
+		outline: none;
+		text-decoration: none;
+
+		img {
+			border: 0;
+		}
+
+	} @else if $element == list {
+
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+
+		> li {
+			margin: 0;
+			padding: 0;
+			list-style-type: none;
+		}
+
+	} @else if $element == definition-list {
+
+		dt, dd {
+
+			margin: 0;
+			-webkit-margin-start: 0;
+
+		}
+
+	} @else if $element == select {
+
+		margin: 0;
+		padding: 0;
+		outline: none;
+
+		-webkit-appearance: none;
+
+	}
+
+}

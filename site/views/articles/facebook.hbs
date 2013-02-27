@@ -1,0 +1,22 @@
+<article class="facebook post stream-article" data-datetime="{{ created_time }}">
+
+	<div>
+
+		<div class="user">
+			<!--a class="thumbnail" href="{{ attribution.href }}"><img src="{{ attribution.thumbnail }}" alt="{{ attribution.name }}" /></a-->
+			<a href="http://www.facebook.com/{{ from.id }}">{{ from.name }}</a>
+		</div>
+
+		{{# picture }}
+		<img src="{{ picture }}" alt="" />
+		{{/ picture }}
+
+		<p>{{{ message }}}</p>
+
+		<time>{{ human_created_time }}</time>
+
+		<span class="ss-facebook ss-social"></span>
+
+	</div>
+
+</article>

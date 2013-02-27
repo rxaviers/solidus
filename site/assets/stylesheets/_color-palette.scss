@@ -1,0 +1,28 @@
+///////////////////
+// BASE PALETTE //
+/////////////////
+
+$gray-light: #a2a7a9;
+$gray-medium: #515455;
+
+$teal-light: #6e8d94;
+$teal-medium: #224953;
+$teal-dark: #121e21;
+
+$blue-dark: #102c4e;
+$blue-medium: #3c5676;
+
+$background-color: #dedede;
+$emphasis-color: #d02417;
+$link-color: #d02417;
+$link-hover-color: #f31100;
+$text-color: $gray-medium;
+$heading-color: $gray-medium;
+
+/////////////////
+// BACKGROUNDS //
+/////////////////
+
+body {
+	background: $background-color url('images/layout/background-blue.jpg') top center;
+}

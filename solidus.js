@@ -98,9 +98,9 @@ router.engine( 'hbs', express_handlebars( express_handlebars_config ));
 router.set( 'view engine', 'hbs' );
 router.set( 'views', views_path );
 
-var assets_path = path.join( __dirname, SITE_DIR, 'assets' );
+var preview_assets_path = path.join( __dirname, 'preview' );
 var api_mock_path = path.join( __dirname, API_MOCK_DIR );
 
-router.use( express.static( assets_path ) );
+router.use( express.static( preview_assets_path ) );
 router.use( '/api', express.static( api_mock_path ) );
 router.listen( 8080 );

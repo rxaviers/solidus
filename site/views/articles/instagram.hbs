@@ -1,0 +1,26 @@
+<article class="instagram photo stream-article" data-datetime="{{ created_time }}">
+
+	<div>
+
+		{{# user }}
+		<div class="user">
+			<a class="thumbnail" href="http://instagram.com/{{ username }}"><img src="{{ profile_picture }}" alt="{{ username }}" /></a>
+			<a href="http://instagram.com/{{ username }}">{{ username }}</a>
+		</div>
+		{{/ user }}
+
+		<a href="{{ link }}"><img src="{{ images.standard_resolution.url }}" alt="{{{ images.caption.text }}}" /></a>
+
+		{{# caption }}
+			<section class="caption">
+				<p>{{{ text }}}</p>
+			</section>
+		{{/ caption }}
+
+		<time>{{ human_created_time }}</time>
+
+		<span class="ss-instagram ss-social"></span>
+
+	</div>
+
+</article>

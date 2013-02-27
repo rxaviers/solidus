@@ -1,0 +1,137 @@
+#footer {
+
+	width: 100%;
+	background: $teal-dark;
+	padding: 20px 0;
+	padding: 2rem 0;
+	color: $teal-light;
+	font-size: 10px;
+	line-height: 1;
+	text-align: center;
+	text-shadow: none;
+
+	div {
+
+		max-width: $page-width;
+		position: relative;
+		margin: 0 auto;
+
+		p {
+			margin: 0 0 5px 0;
+			margin: 0 0 0.5rem 0;
+		}
+
+		a {
+
+			color: $teal-light;
+			text-decoration: underline;
+
+			&:hover {
+				color: lighten($teal-light, 30);
+			}
+
+			&#sparkart {
+
+				width: 86px;
+				height: 22px;
+				background: url('layout/sparkart.png') center top no-repeat;
+				display: block;
+				text-indent: -5000px;
+				position: absolute;
+				top: 0;
+				left: 0;
+
+				&:hover {
+					background-position: center bottom;
+				}
+
+			}
+
+		}
+
+		ul.social {
+
+			@include reset(list);
+			@include clearfix();
+			width: 735px;
+			margin: 0 auto 20px auto;
+			margin: 0 auto 2rem auto;
+
+			li {
+
+				float: left;
+				margin: 0 32px 0 0;
+				margin: 0 4rem 0 0;
+
+				a {
+
+					display: block;
+					height: 26px;
+					text-indent: -5000px;
+					background-repeat: no-repeat;
+					background-position: top left;
+
+					&:hover {
+						background-position: bottom left;
+					}
+
+				}
+
+				&.getglue {
+					margin: 0;
+				}
+
+				&.facebook a {
+					width: 75px;
+					background-image: url('social/facebook.png');
+				}
+
+				&.twitter a {
+					width: 72px;
+					background-image: url('social/twitter.png');
+				}
+
+				&.myspace a {
+					width: 78px;
+					background-image: url('social/myspace.png');
+				}
+
+				&.youtube a {
+					width: 63px;
+					background-image: url('social/youtube.png');
+				}
+
+				&.googleplus a {
+					width: 81px;
+					background-image: url('social/google.png');
+				}
+
+				&.pinterest a {
+					width: 80px;
+					background-image: url('social/pinterest.png');
+				}
+
+				&.getglue a {
+					width: 81px;
+					background-image: url('social/getglue.png');
+				}
+
+				&.instagram {
+
+					margin-right: 0;
+
+					a {
+						width: 92px;
+						height: 31px;
+						background-image: url('social/instagram.png');
+					}
+
+				}
+
+			}
+
+		}
+
+	}
+
+}
