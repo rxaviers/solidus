@@ -30,8 +30,7 @@
     "moment": "~2.0.0",
     "chokidar": "~0.6.2",
     "connect": "~2.8.4",
-    "hyperquest": "~0.1.7",
-    "lru-cache": "~2.3.1"
+    "hipster": "rxaviers/hipster"
   },
   "devDependencies": {
     "mocha": "~1.9.0",
